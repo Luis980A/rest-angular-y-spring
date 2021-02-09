@@ -1,0 +1,28 @@
+server:
+ port: 8080
+
+info:
+ app:
+ name: User Registration System Application
+ description: This Spring Boot application has been created for learning
+ version: 1.0.0  
+ 
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL5Dialect
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbuser?zeroDateTimeBehavior=convertToNull&serverTimezone=UTC
+    username: root
+    password: rootluis
+    
+ # security:
+ #   user:
+ #     name: root
+ #    password: root
+ #    roles:
+ #    - ADMIN
